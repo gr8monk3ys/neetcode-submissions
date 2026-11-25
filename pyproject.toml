@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+# Run from the repo root: `pytest`
+testpaths = ["leetcode"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+# Ensure the repo root is importable so tests can do
+# `from leetcode.<topic>.<problem> import Solution`.
+pythonpath = ["."]
+addopts = "-q --color=yes --ignore=leetcode/templates"
